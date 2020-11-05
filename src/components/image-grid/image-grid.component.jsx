@@ -2,6 +2,8 @@ import React from 'react';
 
 import useFirestore from '../../hooks/useFirestore';
 
+import './image-grid.styles.scss';
+
 const ImageGrid = ({ setSelectedImg }) => {
     const { docs } = useFirestore('images');
     console.log(docs);
@@ -13,6 +15,7 @@ const ImageGrid = ({ setSelectedImg }) => {
                     onClick={() => setSelectedImg(doc.url)}
                 >
                     <img src={doc.url} alt='uploaded doc' />
+                    <p>Image's Name </p>
                 </div>
             ))}
         </div>

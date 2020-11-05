@@ -11,9 +11,9 @@ const Header = () => {
                 <img src={logo} alt={logo} className='logo'/>
             </div>
             <div className='menu'>
-                <p>Quienes Somos</p>
-                <p>Servicios</p>
-                <p>Preguntas Frecuentes</p>
+                <p className='option'>Quienes Somos</p>
+                <p className='option'>Servicios</p>
+                <p className='option'>Preguntas Frecuentes</p>
             </div>	
         </div>
     )

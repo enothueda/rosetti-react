@@ -1,0 +1,41 @@
+.img-grid {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: palevioletred;
+  }
+  
+  .img-wrap {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 420px;
+    height: 420px; /* padding controls height, square despite width*/
+    margin: 10px auto;
+    position: relative;
+    opacity: 0.8;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+        background-color: skyblue;
+    }
+
+
+    img {
+      max-width: 400px;
+      max-height: 375px;  
+    }
+
+    p {
+      color: white;
+      width: 100%;
+      background-color: steelblue;
+      margin: 0;
+      max-width: 250px;
+    }
+  }
+  
+  

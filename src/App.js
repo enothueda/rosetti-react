@@ -6,8 +6,9 @@ import Slideshow from './components/slideshow/slideshow.component';
 import UploadForm from './components/upload-form/upload-form.component';
 import ImageGrid from './components/image-grid/image-grid.component';
 import Modal from './components/modal/modal.component';
+import Footer from './components/footer/footer.component';
 
-import './App.css';
+import './App.scss';
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
       <UploadForm />
       <ImageGrid setSelectedImg={setSelectedImg} />
       { selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} /> }
+      <Footer />
     </div>
   );
 }

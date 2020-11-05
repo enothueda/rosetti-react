@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './modal.styles.scss';
+
 const Modal = ({ selectedImg, setSelectedImg }) => {
     const handleClick = event => {
         if(event.target.classList.contains('backdrop')) {

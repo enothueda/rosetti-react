@@ -1,12 +1,13 @@
 .header {
-	width: 90%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+	align-items: center;
     align-content: center;
-    flex-direction: column;
-	flex-wrap: wrap;
+    flex-direction: row;
+	margin: auto;
 	margin-bottom: 5px;
 	font-size: 18px;
+	background-color: darkorchid;
 
 	@media screen and (max-width: 800px) {
  		width: 100%;
@@ -17,6 +18,10 @@
 	& .logo {
 		height: 100px;
 		padding: 10px;
+		display: flex;
+		align-items: center;
+		background-color: white;
+		border-radius: 10px;
 
 		@media screen and (max-width: 800px) {
  			height: 40px;
@@ -24,10 +29,9 @@
 	}
 
 	& .menu {
-		width: 100%;
+		width: 50%;
 		height: 100%;
 		display: flex;
-		align-items: flex-end;
 		justify-content: flex-end;
         padding: 20px;
 
@@ -38,8 +42,9 @@
 
 		& .option {
 			padding: 20px 15px;
-			color: #2882E1;
+			color: goldenrod;
 			font-size: 1.2em;
+			cursor: pointer;
 
 			@media screen and (max-width: 800px) {
  				padding: 15px 5px;
@@ -47,7 +52,7 @@
  			}
 
 			&:hover {
-				text-decoration: underline #A0C332;
+				text-decoration: underline white;
 				font-weight: bold;
 			}			
 		}

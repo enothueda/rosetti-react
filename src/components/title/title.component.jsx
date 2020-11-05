@@ -1,11 +1,13 @@
 import React from 'react';
 
+import './title.styles.scss';
+
 const Title = () => {
     return (
         <div className='title'>
             <h1>Rosetti</h1>
-            <h2>My Parties</h2>
-            <p>Lorem ipsum dolor sit amet</p>
+            <h2>Mis Fiestas</h2>
+            <p>Descripcion de algo o texto</p>
         </div>
     )
 }

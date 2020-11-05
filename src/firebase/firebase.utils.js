@@ -2,7 +2,8 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/storage';
 
-const firebaseConfig = 'YOUR API AND INFO HERE'
+const firebaseConfig = 'YOU API KEY AND INFO HERE'
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
